@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+#container{
+	background-image: url("../images/backgroundImg_login.jpg");
+}
+#content{
+	padding: 50px;
+	max-width: 1100px;
+	min-height: 65vh;
+	box-sizing: border-box;
+
+	margin: 50px auto;
+}
+#content section {
+	height: 100%;
+	background-color: rgba(255, 255, 255,0.8);
+	padding: 0 15px;
+}
+#content section div{
+	padding: 10px 0;
+	text-align: left;
+}
+#content ul{
+	width: 100%;
+
+}
+#content li{
+	width: 50%;
+	height: 60px;
+	line-height: 60px;
+	float: left;
+	background-color: rgba(102, 136, 171, 0.8);
+
+	font-size: 1.6em;
+	text-align: center;
+	font-family: 'Questrial', sans-serif;
+	color: #000724;
+}
+#content li:hover{
+	background-color: rgba(255, 255, 255,0.8);
+}
+#content li.active{
+	background-color: rgba(255, 255, 255,0.8);
+	font-size: 2em;
+}
+
+form.loginForm,
+form.signUpForm{
+	width: 100%;
+}
+form.loginForm{
+	margin: 60px 0;
+}
+
+form.loginForm div,
+form.signUpForm div{
+	margin: 10px 0;
+	padding: 0;
+}
+
+form.loginForm label,
+form.signUpForm label{
+	width: 100%;
+	font-size: 1.6em;
+	font-family: 'Questrial', sans-serif;
+	font-weight: bold;
+	color: #000724;
+	text-align: left;
+}
+form.loginForm input,
+form.signUpForm input{
+	box-sizing: border-box;
+	background-color: #000724;
+	margin: 6px 0;
+	padding: 15px 10px 15px 15px;
+	width: 100%;
+}
+
+form.loginForm button,
+form.signUpForm button{
+	background-color: #CCD9E2;
+	padding: 15px;
+	width: 200px;
+	text-align: center;
+
+	font-size: 1.6em;
+	font-family: 'Questrial', sans-serif;
+	font-weight: bold;
+	color: #6688AB;
+}
+form.loginForm button:hover,
+form.signUpForm button:hover{
+	background-color: #6688AB;
+	color: #CCD9E2;
+}
+
+form.signUpForm label[for="subscribe"]{
+	width: auto;
+}
+#content section form.signUpForm .ageOptions{
+	padding: 0;
+}
+
+form.signUpForm .ageOptions p{
+	font-size: 1.25em;
+	color: #274D6A;
+
+}
+#content section .ageOptions div,
+#content section .subscribe{
+	padding: 0;
+
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+}
+form.signUpForm input[type="radio"],
+form.signUpForm input[type="checkbox"]{
+	width: auto;
+	margin: 0;
+	margin-right: 10px;
+}
+
+
+/*****************************************************************************************************************************************
+															MEDIA QUERIES
+*****************************************************************************************************************************************/
+
+/******************************************************************************
+								Small screens
+******************************************************************************/
+
+@media screen and (max-width: 1024px){
+	#content{
+		padding: 30px;
+	}
+}
+
+/******************************************************************************
+							    Mobile
+******************************************************************************/
+
+@media screen and (max-width: 625px){
+	#content{
+		padding: 10px;
+	}
+	#content form label{
+		font-size: 1.4em;
+	}
+	#content form button{
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+		max-width: 400px;
+	}
+}

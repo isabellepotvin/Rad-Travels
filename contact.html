@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Rad Travels - Contact</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="styles/home.css">
+	<link rel="stylesheet" href="styles/contact.css">
+	<link href="https://fonts.googleapis.com/css?family=Patua+One|Questrial" rel="stylesheet">
+</head>
+
+<body>
+	<div id="container">
+
+
+<!-- ****************************************
+				Header
+***************************************** -->
+		<div id="headerBackground">
+			<div id="siteHeader">
+				<header>
+						<a href="index.html"><img src="images/logo.png" class="logo" alt="Company Logo"></a>
+						<h1><a href="index.html">RadTravels</a></h1>
+						<img src="images/dropDownMenu.png" class="dropDown ham" alt="Menu">
+						<img src="images/cross.png" class="dropDown cross" alt="Close">
+				</header>
+				<nav id="nav">
+					<ul class="login">
+						<li><a href="login.html">Login</a></li>
+						<li class="vertLine">|</li>
+						<li><a href="login.html">Sign Up</a></li>
+					</ul>
+					<ul class="mainNav">
+						<li><a href="about.html">About</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="plan.html">Plan</a></li>
+						<li class="active"><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+
+<!-- ****************************************
+				Content 
+***************************************** -->
+		<div id="contentContact">
+			<section>
+				<p>
+					Here at RadTravels, we are more than happy to answer any questions or concerns you may have. We also love to hear about your experience. Your feedback helps us improve our services. Send us some awesome pictures of your RadTravels adventure for a chance to be featured on our website!
+				</p>
+
+			</section>
+			<section>
+				<h2>Contact Information</h2>
+				<p>Email us at&nbsp<h6>info@radtravels.ca</h6></p><br>
+				<p>Reach us by phone at&nbsp<h6>321.456.7890</h6></p>
+			</section>
+			<section>
+			<h2>Contact Us Directly</h2>
+			<form class="contact" action="somepage.php" method="get">
+				<div>
+					<label for="name">Name *</label>
+					<input type="text" name="name" id="name" placeholder="Enter your name" required>
+				</div>
+				<div>
+					<label for="em">Email *</label>
+					<input type="email" name="em" id="em" placeholder="Enter your email" required>
+				</div>
+
+				<div>
+					<label for="message">Message *</label>
+					<textarea name="message" id="message" placeholder="Enter your message" required></textarea>
+				</div>
+				<div>
+					<button type="submit">Submit</button>
+				</div>
+			</form>
+			</section>
+		</div>
+
+
+
+<!-- ****************************************
+				Footer
+***************************************** -->
+
+		<div id="footerBackground">
+			<footer>
+				<section class="fSubscribe">
+					<h3>Subscribe for news and offers</h3>
+					<form class="subscribe" action="somepage.php" method="get">
+						<div>
+							<label for="em">
+								<input type="email" name="em" id="em" placeholder="Enter your email address" required>
+								<button type="submit"><img src="images/submitArrow.png"></button>
+							</label>
+							<p>By signing up, you will receive emails approximately 2-3 times a week, which will include special deals and promotions. You can unsubscribe at any time.</p>
+						</div>
+					</form>
+					<form class="subscribe" action="somepage.php" method="get">
+						<div>
+							<label for="mobile">
+								<input type="tel" name="mobile" id="mobile" placeholder="Enter your mobile number" required>
+								<button type="submit"><img src="images/submitArrow.png"></button>
+							</label>
+							<p>By signing up, you will receive texts approximately 2-3 times a week, which will include special deals and promotions. Standard messaging rates may apply.</p>
+						</div>
+					</form>
+				</section>
+				<div class="rightColumn">
+					<section class="fContact">
+						<h3>Contact Us</h3>
+						<div itemscope itemtype="http://schema.org/Organization">
+							<span itemprop="email">info@radtravels.ca</span>
+							<span itemprop="telephone">321.456.7890</span>
+						</div>
+					</section>
+					<section class="fFollow">
+						<h3>Follow Us</h3>
+						<ul class="socialMedia">
+							<li class="facebook">
+								<a href="https://www.facebook.com" target="_blank">
+									<img src="images/socialMedia_fb.png" class="fb normal" alt="Our Facebook Page">
+									<img src="images/socialMedia_fb_rollover.png" class="fb rollover" alt="Our Facebook Page">
+								</a>
+							</li>
+							<li class="twitter">
+								<a href="https://twitter.com" target="_blank">
+									<img src="images/socialMedia_twit.png" class="twit normal" alt="Our Twitter Page">
+									<img src="images/socialMedia_twit_rollover.png" class="twit rollover" alt="Our Twitter Page">
+								</a>
+							</li>
+							<li class="instagram">
+								<a href="https://www.instagram.com" target="_blank">
+									<img src="images/socialMedia_insta.png" class="insta normal" alt="Our Instagram Page">
+									<img src="images/socialMedia_insta_rollover.png" class="insta rollover" alt="Our Instagram Page">
+								</a>
+							</li>
+							<li class="youtube">
+								<a href="https://www.youtube.com" target="_blank">
+									<img src="images/socialMedia_yt.png" class="yt normal" alt="Our Youtube Page">
+									<img src="images/socialMedia_yt_rollover.png" class="yt rollover" alt="Our Youtube Page">
+								</a>
+							</li>
+
+						</ul>
+					</section>
+					<section class="copyright">
+						<p>Copyright &copy; RadTravels 2017</p>
+					</section>
+				</div>
+			</footer>
+		</div>
+
+
+	</div>
+	<script src="scripts/jquery-3.1.1.min.js"></script>
+	<script src="scripts/home.js"></script>
+	<script src="scripts/contact.js"></script>
+</body>
+</html>

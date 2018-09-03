@@ -1,0 +1,897 @@
+﻿@charset "utf-8";
+
+/* CSS Document */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/******************************************************************************
+								Text
+******************************************************************************/
+
+
+html{
+	font-size: 16px;
+}
+
+
+h2,h3,h4,h5,h6,p,a,span,figcaption{
+	font-family: 'Questrial', sans-serif;
+	color: #000724;
+}
+h1 a{
+	color: #000724;
+	font-family: 'Patua One', cursive;
+	font-size: 3.75em;
+	font-weight: bold;
+	padding-left: 20px;
+	text-decoration: none;
+}
+h3{
+	color: #274D6A;
+	font-size: 1.875em;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+h2{
+	color: #274D6A;
+	font-size: 2.8125em;
+	font-weight: bold;
+}
+
+
+/******************************************************************************
+								Header
+******************************************************************************/
+#headerBackground{
+	background-color: #6688AB;
+	box-shadow: 0 1px 5px 4px #888;
+}
+
+#siteHeader{
+	box-sizing: border-box;
+	height: 100px;
+	max-width: 1500px;
+	padding: 15px 30px 10px 30px;
+	margin: 0 auto;
+
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+
+}
+header{
+	text-decoration: none;
+
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+
+   	-webkit-justify-content: center;
+   	-ms-flex-pack: justify;
+   justify-content: center;
+
+}
+.logo{
+	width: 120px;
+	height: 120px;
+	margin-top: 30px;
+}
+.dropDown{
+	display: none;
+}
+
+/***********************************************
+				Navigation
+***********************************************/
+nav{
+	width: 45%;
+
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+nav ul li a{
+	text-decoration: none;
+}
+
+nav ul{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+nav ul.mainNav li a{
+	color: #CCD9E2;
+	border-bottom: solid 5px #6688AB;
+	margin-bottom: -10px;
+
+	font-size: 1.875em;
+	font-weight: bolder;
+
+	display: block;
+	height: 32px
+}
+nav ul.mainNav li a:hover{
+	border-bottom: solid 5px #CCD9E2;
+	transition: all 0.1s ease-in;
+}
+nav ul.mainNav li.active a{
+	border-bottom: solid 5px #CCD9E2;
+}
+
+
+nav ul.login{
+	-webkit-justify-content: flex-end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+}
+nav ul.login li{
+	margin-left: 10px;
+	font-size: 1.125em;
+}
+nav ul.login li a:hover{
+	text-decoration: underline;
+}
+
+
+/******************************************************************************
+								Content
+******************************************************************************/
+
+#container{
+	background-image: url("../images/backgroundImg.png");
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+
+	box-sizing: border-box;
+}
+
+#content section{
+	height: 400px;
+	box-sizing: border-box;
+
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+#content section div{
+	height: 100%;
+	padding: 50px;
+	max-width: 1100px;
+	width: 100%;
+	text-align: center;
+	box-sizing: border-box;
+
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+
+}
+
+/***********************************************
+					Intro
+***********************************************/
+
+#content section.intro{
+	height: 85vh;
+}
+#content section.intro div{
+	padding-top: 30vh;
+
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+.intro img{
+	height: 35px;
+	width: 65px;
+	margin-bottom: -20px;
+}
+
+/***********************************************
+			Company description
+***********************************************/
+#content section.companyDescription{
+	background-color: #CCD9E2;
+	font-size: 1.5625em;
+	line-height: 30px;
+	padding-top: 20px;	
+	padding-bottom: 20px;
+}
+
+#content section.companyDescription div{
+	-webkit-justify-content: space-around;
+	-ms-flex-pack: justify;
+	justify-content: space-around;
+
+	width: 100%;
+}
+h5 a{
+	display: inline-block;
+	padding: 10px;
+	width: 200px;
+	text-decoration: none;
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+
+
+	background-color: #274D6A;
+	color: #CCD9E2;
+}
+h5 a:hover,
+h5 a:focus{
+	background-color: #6688AB;
+}
+
+/***********************************************
+				Sub Pages
+***********************************************/
+
+#container #content section.subPages{
+	background-image: url("../images/heroImg.png");
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+
+	height: 550px;
+}
+
+#content section.subPages ul{
+
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+
+	margin: auto;
+}
+
+#content section.subPages ul .groupPages{
+	width: 100%;
+	padding: 0;
+
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	-webkit-justify-content: center;
+	-ms-flex-pack: justify;
+	justify-content: center;
+
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+#content section.subPages ul li{
+	margin: 20px 10px;
+}
+
+.subPages img{
+	height: 200px;
+}
+
+.subPages .hover{
+	display: none;
+}
+
+.subPages ul li:hover .normal{
+	display: none;
+}
+.subPages ul li:hover .hover{
+	display: inline-block;
+}
+.subPages figcaption{
+	height: 40px;
+	width: 140px;
+	margin: 0 auto;
+	background-color: #000724;
+	color: #CCD9E2;
+	font-size: 1.4em;
+	line-height: 40px;
+}
+.subPages a{
+	text-decoration: none;
+}
+/***********************************************
+				Location Search
+***********************************************/
+
+#content section.locationSearch div{
+	-webkit-justify-content: space-around;
+	-ms-flex-pack: justify;
+	justify-content: space-around;
+
+	margin: 80px 0;
+}
+#content section.locationSearch:before{
+	background-color: rgba(0, 0, 0, 0.8);
+	filter: blur(5px);
+}
+section.locationSearch h2{
+	color: #000724;
+}
+
+.locationSearch form{
+	width: 80%;
+}
+#content section.locationSearch{
+	background-image: url("../images/backgroundImg_blur.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+
+
+/******************************************************************************
+								Footer
+******************************************************************************/
+
+#footerBackground{
+	background-color: #6688AB;
+}
+footer{
+	box-sizing: border-box;
+	height: 280px;
+	padding: 15px 30px;
+	max-width: 1500px;
+	margin: 0 auto;
+
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+.fSubscribe, .rightColumn{
+	width: 35%;
+
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+/***********************************************
+				Subscribe
+***********************************************/
+footer .fSubscribe{
+	height: 100%;
+	width: 60%;
+
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+footer form.subscribe{
+	height: 50%;
+}
+button img{
+	height: 30px;
+	display: inline-block;
+	vertical-align: middle;
+}
+form.subscribe label,
+form.location label{
+	background-color: #000724;
+	margin: 6px 0;
+	padding: 8px 10px 8px 15px;
+
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+input, button{
+	background: none;
+	border: none;
+}
+button{
+	cursor: pointer;
+}
+button:focus{
+	outline: none;
+}
+input, textarea{
+	width: 100%;
+	font-size: 1.43em;
+	font-family: 'Questrial', sans-serif;
+	font-weight: lighter;
+	color: #CCD9E2;
+}
+input:focus{
+	outline: none;
+}
+footer .fSubscribe p{
+	color: #274D6A;
+}
+
+
+
+/***********************************************
+				Contact Us
+***********************************************/
+footer .fContact span{
+	color: #CCD9E2;
+	font-size: 1.43em;
+	display: block;
+	margin-bottom: 6px;
+}
+footer .fContact div:last-child{
+	margin-bottom: none;
+}
+
+/***********************************************
+				Follow Us
+***********************************************/
+footer ul{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+footer .fFollow img{
+	height: 60px;
+	width: 60px;
+}
+footer .rollover{
+	display: none;
+}
+
+footer ul li:hover .normal{
+	display: none;
+}
+footer ul li:hover .rollover{
+	display: inline-block;
+}
+
+/***********************************************
+				Copyright
+***********************************************/
+.copyright p{
+	text-align: right;
+	color: #274D6A;
+	margin-top: 10px;
+}
+
+/*****************************************************************************************************************************************
+															MEDIA QUERIES
+*****************************************************************************************************************************************/
+
+/******************************************************************************
+								Small screens
+******************************************************************************/
+
+@media screen and (max-width: 1024px){
+
+    html{
+        font-size: 15px;
+    }
+
+/***********************************************
+				Header
+***********************************************/
+	#siteHeader{
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+
+		height: 80px;
+	}
+	.dropDown{
+		display: block;
+		height: 30px;
+	}
+	header{
+		width: 100%;
+		-webkit-justify-content: space-between;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+	}
+	.logo{
+		width: 110px;
+		height: 110px;
+		margin-top: 40px;
+		margin-right: -60px;
+	}
+
+/***********************************************
+				Navigation
+***********************************************/
+
+	nav{
+		display: none;
+	}
+	.dropDown.cross{
+		display: none;
+	}
+	.dropDown.cross.active{
+		display: inline-block;
+		margin-left: 10px;
+		z-index: 300;
+	}
+	.dropDown.ham.active{
+		display: none;
+	}
+	nav.active{
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+
+		width: 100%;
+		height: 100%;
+
+		background-color: rgba(0,0,0,0.9);
+		position: fixed;
+		z-index: 100;
+		top: 0;
+		left: 0;
+
+		-webkit-justify-content: space-between;
+		-ms-flex-pack: justify;
+		justify-content: center;
+	}
+
+	nav ul.mainNav{
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+
+		-webkit-justify-content: flex-start;
+		-ms-flex-pack: start;
+		justify-content: flex-start;
+
+		text-align: center;
+	}
+	nav ul.mainNav li a{
+		width: 40%;
+		margin: 30px auto;
+		margin-bottom: 0px;
+		border-bottom: solid 5px #CCD9E2;
+		vertical-align: middle;
+		height: 60px;
+	}
+	nav ul.mainNav li:last-child a{
+		border-bottom: none;
+	}
+	nav ul.mainNav li a:hover{
+		transition: none;
+	}
+	nav ul.mainNav li.active a{
+		color: #6688AB;
+	}
+
+
+	nav ul.login{
+		-webkit-justify-content: space-around;
+		-ms-flex-pack: justify;
+		justify-content: space-around;
+
+		width: 200px;
+		margin: 30px auto;
+	}
+	nav ul.login li{
+		margin-left: 0;
+		font-size: 1.5em;
+		
+	}
+	nav ul.login li a{
+		color: #CCD9E2;
+	}
+	nav ul.login li a:hover{
+		text-decoration: none;
+	}
+	nav .vertLine{
+		display: none;
+	}
+
+
+
+/***********************************************
+				Content
+***********************************************/
+
+	#content section{
+		height: 500px;
+	}
+	#content section.companyDescription{
+		padding-top: 50px;	
+		padding-bottom: 50px;
+	}
+	h5 a{
+		width: 300px;
+		margin-top: 20px;
+	}
+	#content section.locationSearch{
+		height: 380px;
+	}
+	#container #content section.subPages{
+		height: 650px;
+	}
+	#content section.subPages ul{
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+
+/***********************************************
+				Footer
+***********************************************/
+	footer{
+		height: 450px;
+
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+	footer .fSubscribe{
+	height: 55%;
+	width: 100%;
+	}
+
+	.rightColumn{
+	width: 100%;
+	height: 35%;
+
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	}
+	.fContact, .fFollow{
+		width: 50%;
+	}
+
+	.copyright{
+		width: 100%;
+		margin-top: 25px;
+	}
+	.copyright p{
+		text-align: center;
+	}
+}
+
+
+
+/******************************************************************************
+							    Mobile
+******************************************************************************/
+
+@media screen and (max-width: 625px){
+    
+    html{
+        font-size: 13.5px;
+    }
+    h1 a{
+    	font-size: 3em;
+    }
+
+/***********************************************
+				Header/Navigation
+***********************************************/
+	
+	.dropDown{
+		height: 20px;
+		margin-left: -10px;
+	}
+	nav ul.mainNav li a{
+		width: 70%;
+		margin: 10px auto;
+		vertical-align: middle;
+		height: 40px;
+	}
+	nav ul.mainNav li:first-child a{
+		margin-top: 25px;
+	}
+
+	#siteHeader{
+		height: 60px;
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+	.logo{
+		width: 80px;
+		height: 80px;
+		margin-top: 30px;
+		margin-right: -40px;
+	}
+
+/***********************************************
+				Content
+***********************************************/
+
+	#content section{
+		height: 600px;
+	}
+	#content section div{
+		padding: 30px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	#content section.companyDescription{
+		padding-top: 60px;	
+		padding-bottom: 60px;
+	}
+	.locationSearch form{
+		width: 100%;
+	}
+	.subPages img {
+    	height: 150px;
+	}
+	#container #content section.subPages{
+		height: 510px;
+	}
+
+/***********************************************
+				Footer
+***********************************************/
+	footer{
+		height: 550px;
+		padding: 15px 10px;
+
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+	footer .fSubscribe{
+	    height: 50%;
+	}
+
+	.rightColumn{
+		height: 47%;
+
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+	.fContact, .fFollow{
+		width: 100%;
+	}
+	.copyright{
+		margin-top: 5px;
+	}
+}
+
+@media screen and (max-width: 390px){
+
+	h1 a{
+		font-size: 2.5em;
+	}
+	.logo{
+		height: 70px;
+		width: 70px;
+		margin-top: 20px;
+	}
+	h5 a {
+		width: 280px;
+	}
+	#content section.subPages ul li{
+		margin: 20px 0;
+	}
+	footer p{
+		font-size: 0.9em;
+	}
+
+}
+

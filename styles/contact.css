@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+#container{
+	background-image: url("../images/backgroundImg_contact.jpg");
+}
+
+
+/***********************************************
+				Content
+***********************************************/
+
+#contentContact{
+	padding: 50px;
+	max-width: 1100px;
+	box-sizing: border-box;
+
+	margin: 0 auto;
+	margin-top: 20px;
+}
+#contentContact section{
+	padding: 50px 0;
+}
+
+#contentContact h2{
+	padding: 5px 0;
+	color: #6688AB;
+	border-bottom: 7px solid;
+	font-size: 2.5em;
+	margin-bottom: 25px;
+}
+#contentContact p,
+#contentContact h6{
+	font-size: 1.8em;
+	font-weight: bold;
+	display: inline-block;
+	line-height: 1.3em;
+	text-align: justify;
+}
+#contentContact h6{
+	color: #274D6A;
+}
+
+/***********************************************
+				Form
+***********************************************/
+form.contact div{
+	margin: 20px 0;
+}
+form.contact label{
+	font-size: 1.6em;
+	font-family: 'Questrial', sans-serif;
+	font-weight: bold;
+	color: #000724;
+}
+form.contact input,
+form.contact textarea{
+	box-sizing: border-box;
+	background-color: #000724;
+	margin: 6px 0;
+	padding: 15px 10px 15px 15px;
+	width: 100%;
+}
+form.contact textarea{
+	height: 300px;
+	outline: none;
+	resize: none;
+}
+form.contact button{
+	background-color: #CCD9E2;
+	padding: 15px;
+	width: 200px;
+	text-align: center;
+
+	font-size: 1.6em;
+	font-family: 'Questrial', sans-serif;
+	font-weight: bold;
+	color: #6688AB;
+}
+form.contact button:hover{
+	background-color: #6688AB;
+	color: #CCD9E2;
+}
+
+
+
+/*****************************************************************************************************************************************
+															MEDIA QUERIES
+*****************************************************************************************************************************************/
+
+/******************************************************************************
+								Small screens
+******************************************************************************/
+
+@media screen and (max-width: 1024px){
+	#contentContact{
+		padding: 30px;
+	}
+	#contentContact section{
+		padding: 30px 0;
+	}
+
+	#contentContact p,
+	#contentContact h6{
+		font-size: 1.5em;
+	}
+
+}
+
+/******************************************************************************
+							    Mobile
+******************************************************************************/
+
+@media screen and (max-width: 625px){
+	#contentContact{
+		padding: 10px;
+	}
+	#contentContact section{
+		padding: 20px 0;
+	}
+	#contentContact h2{
+		font-size: 1.9em;
+		margin-bottom: 15px;
+	}
+
+	#contentContact p,
+	#contentContact h6{
+		font-size: 1.4em;
+	}
+	form.contact label{
+		font-size: 1.4em;
+	}
+	form.contact button{
+		display: block;
+		margin: 0 auto;
+		width: 100%;
+		max-width: 400px;
+	}
+
+
+}

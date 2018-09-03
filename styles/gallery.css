@@ -1,0 +1,236 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+#container{
+	background-image: none;
+}
+
+
+/***********************************************
+				Content
+***********************************************/
+
+#contentGall{
+	padding: 50px;
+	max-width: 1100px;
+	box-sizing: border-box;
+
+	margin: 0 auto;
+	margin-top: 20px;
+}
+#contentGall section.contenant{
+	height: 100%;
+	margin-bottom: 70px;
+}
+#contentGall section.contenant:last-child{
+	margin-bottom: 0;
+}
+#contentGall h2{
+	padding: 5px 0;
+	color: #6688AB;
+	border-bottom: 7px solid;
+	font-size: 3.2em;
+	margin-bottom: 10px;
+}
+
+
+#contentGall section.picRow{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+
+
+}
+#contentGall div.picColumn{
+	margin-right: 20px;
+
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+
+}
+#contentGall div.picColumn:last-child{
+	margin-right: 0;
+}
+
+
+#contentGall img{
+	max-width: 100%;
+	margin: 10px 0;
+}
+
+
+/***********************************************
+			Big Image (pop-up)
+***********************************************/
+
+div#buttons.active{
+	position: fixed;
+	z-index: 200;
+
+	width: 100%;
+
+}
+div#buttons.active div{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 50px;
+	max-width: 1100px;
+	margin: 0 auto;
+
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+#buttons p{
+	width: 50px;
+	height: 70px;
+	line-height: 70px;
+
+	background-color: rgba(204, 217, 226, 0.8);
+	text-align: center;
+	font-size: 2em;
+}
+#buttons p:hover{
+	background-color: #CCD9E2;
+	cursor: pointer;
+}
+
+div#bigImg.active{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+
+	background-color: rgba(0,0,0,0.8);
+	z-index: 100;
+	top: 0;
+	left: 0;
+}
+div#bigImg.active div{
+	width: 100%;
+	height: 100%;
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 50px;
+	box-sizing: border-box;
+}
+div#bigImg.active img{
+	max-width: 100%;
+	max-height: 100%;
+	margin: 0 auto;
+	display: block;
+
+}
+
+/*****************************************************************************************************************************************
+															MEDIA QUERIES
+*****************************************************************************************************************************************/
+
+/******************************************************************************
+								Small screens
+******************************************************************************/
+
+@media screen and (max-width: 1024px){
+
+	#contentGall{
+		margin: 40px 0;
+	}
+	#contentGall section.contenant{
+		margin-bottom: 50px;
+	}
+	#contentGall h2{
+		font-size: 3em;
+	}
+
+
+	#contentGall{
+		padding: 30px;
+	}
+
+	#contentGall div.picColumn{
+		margin-right: 15px;
+
+	}
+	#contentGall img{
+		margin: 7.5px 0;
+	}
+	div#buttons.active div{
+		padding: 0 30px;
+	}
+	div#bigImg.active div{
+		padding: 30px;
+
+	}
+
+
+}
+
+
+
+/******************************************************************************
+							    Mobile
+******************************************************************************/
+
+@media screen and (max-width: 625px){
+
+	#contentGall{
+		margin: 30px 0;
+	}
+	#contentGall section.contenant{
+		margin-bottom: 30px;
+	}
+	#contentGall h2{
+		font-size: 2.7em;
+	}
+
+	#contentGall{
+		padding: 10px;
+	}
+
+	#contentGall div.picColumn{
+		margin-right: 10px;
+
+	}
+	#contentGall img{
+		margin: 5px 0;
+	}
+	div#buttons.active div{
+		padding: 0 10px;
+	}
+	#buttons p{
+		width: 40px;
+		height: 50px;
+		line-height: 50px;
+		font-size: 1.8em;
+	}
+	div#bigImg.active div{
+		padding: 10px;
+
+	}
+
+
+
+
