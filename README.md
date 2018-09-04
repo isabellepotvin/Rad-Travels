@@ -15,6 +15,9 @@ The purpose of the website is to promote a well known travel company called RadT
 
 ## Wireframes
 
-![Wireframes-Large-Screens](/img_readme/WireframeLargeScreens.png) <!-- .element height="40%" width="40%" -->  
-![Wireframes-Mobile](/img_readme/WireframeMobile.png) <!-- .element height="40%" width="40%" -->
+### Large Screens
+![Wireframes-Large-Screens](/img_readme/WireframeLargeScreens.png)
+
+### Mobile
+![Wireframes-Mobile](/img_readme/WireframeMobile.png)
 
